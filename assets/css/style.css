@@ -19,6 +19,8 @@ html, body {
 
 a { text-decoration: none;}
 
+img {width: 100%;}
+
 h1, h2, h3, h4, h5, h6 {
 	
 	color: #4aaaa5;
@@ -56,7 +58,6 @@ header {
 	border-bottom-left-radius: 20px;			/* rounds bottom border*/
 	border-bottom-right-radius: 20px;			/* rounds bottom border*/
 	
-	/*position: relative;					test line for possition nav*/
 }
 
 
@@ -73,7 +74,6 @@ header {
 }
 
 nav {
-	
 							
 	position: absolute;
 	top: 35px;
@@ -254,7 +254,7 @@ footer {
 @media only screen and (max-width: 980px){
 
 	
-	/*********************  Index Page Style  ********************/
+	/*********************  980px Index Page Styles  ********************/
 	.wrapper {
 		
 		min-height: 100%;
@@ -307,7 +307,15 @@ footer {
 		position: absolute;
 		right: 90px;
 	}
+	
 
+	/*********************  980px Portfolio Page Style  ********************/
+	.portfolio-figure {
+		
+		height: 100%;
+		width: 100%;	
+	}
+	
 
 }
 
@@ -369,6 +377,14 @@ footer {
 		right: 15px;
 	}
 
+		/*********************  768px Portfolio Page Style  ********************/
+	
+	.portfolio-figure {
+		width: 315px;
+		height: 235px;
+		box-sizing: border-box;
+		margin-bottom: 40px;
+	}
 	
 }
 
@@ -392,7 +408,6 @@ footer {
 		border: 1px solid #dddddd; 
 		padding: 0 30px;
 		margin-bottom: 40px;
-
 	}
 
 
@@ -402,7 +417,6 @@ footer {
 		margin-bottom: 25px;
 
 	}
-
 
 	.sidebar {
 
@@ -418,8 +432,7 @@ footer {
 		width: 100%;
 		border-bottom: 2px solid #cccccc;	
 		border-bottom-left-radius: 20px;			/* rounds bottom border*/
-		border-bottom-right-radius: 20px;			/* rounds bottom border*/
-	
+		border-bottom-right-radius: 20px;			/* rounds bottom border*/	
 	}
 	
 	#my-name {
@@ -443,9 +456,14 @@ footer {
 		
 	}
 
-	a.nav-menu { padding: 0px 65px;	
-}
+	a.nav-menu { padding: 0px 65px;	}
 
+		/*********************  640px Portfolio Page Style  ********************/
+	.portfolio-figure {
+		
+		height: 100%;
+		width: 100%;	
+	}
 	
 	
 }
