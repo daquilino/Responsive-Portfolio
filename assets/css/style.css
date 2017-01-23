@@ -1,0 +1,456 @@
+@import "reset.css";
+
+html, body {
+		height: 100%;
+		background-image: url("../images/bg-image.png");
+		font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+		color:#777777 ;
+		font-size: 18px;
+		text-align: center;			
+}
+
+.wrapper {
+	
+	min-height: 100%;
+	width:960px;
+	margin: 40px 0px -105px 150px;
+
+}
+
+a { text-decoration: none;}
+
+h1, h2, h3, h4, h5, h6 {
+	
+	color: #4aaaa5;
+	font-weight: 900;
+	font-size: 32px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.rounded  {border-radius: 20px;	} 				/* rounds border */ 	
+
+.clear{ clear: both; }  /** clears float**/
+
+#main {
+	
+	float: left;
+	text-align: left;
+	width: 650px;
+	background: #ffffff;
+	border: 1px solid #dddddd; 
+	padding: 0 30px;
+	box-sizing: border-box;	
+	margin-bottom: 40px;
+}
+
+
+/*********************************************************************/
+/******************************  Header Style  ***********************/
+
+header {
+	
+	background: #ffffff;
+	height: 90px;
+	width: 100%;
+	border-bottom: 2px solid #cccccc;	
+	border-bottom-left-radius: 20px;			/* rounds bottom border*/
+	border-bottom-right-radius: 20px;			/* rounds bottom border*/
+	
+	/*position: relative;					test line for possition nav*/
+}
+
+
+#my-name {
+	
+	color: #ffffff;
+	background: #4aaaa5;
+	/*float: left;*/
+	margin-left: 150px;
+	height:62px;
+	width: 350px;
+	margin-top:0px;
+	padding-top: 28px;
+}
+
+nav {
+	
+							
+	position: absolute;
+	top: 35px;
+	right: 250px;
+}
+
+a.nav-menu {
+	
+	color: #4aaaa5;
+	padding: 0px 10px;	
+}
+
+a+a.nav-menu { border-left:1px solid #dddddd; }  
+
+.nav-link:hover {
+
+  text-decoration: underline;
+}
+
+/*********************************************************************/
+/**************************  Index Page Style  ***********************/
+
+#about-me {
+
+	padding-top: 33px;
+	padding-bottom: 33px;
+	border-bottom: 3px solid #dddddd;
+	margin-bottom: 30px;
+}
+
+#profile-pic {
+	
+	float:left;
+	height: 175px;
+	width: 175px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+
+}
+
+p {
+	line-height: 190%;
+	position:relative;
+	top: -10px;
+}
+
+
+/*****************************************************************/
+/********************* Side Bar Styles ***************************/
+
+.sidebar {
+	
+	float: right;
+	width: 270px;
+	height: 200px;
+	box-sizing: border-box;
+	background: #ffffff;
+	border: 1px solid #dddddd; 
+	padding: 30px 30px 40px 30px;
+}
+
+#sidebar-heading {
+	
+	font-size: 24px;
+	border-bottom: 2px solid #dddddd;
+	padding-bottom:20px;
+	margin-bottom: 20px;
+}
+
+li { display: inline; }
+
+li+li { padding-left: 6px; }
+
+img.sidebar-links{
+	
+	width: 60px;
+	height: 60px;
+}
+
+.sidebar-hover:hover{
+	width: 58px;
+	height: 58px;
+	margin-left: 2px;
+}
+
+
+/*****************************************************************/
+/*********************** Footer Styles ***************************/
+
+footer {
+
+	font-size: 12px;
+	color: white;
+	background: #666666;
+	border-top: 10px solid #4aaaa5;
+	width: 100%;
+	height: 60px;
+	padding-top:35px;
+	border-top-left-radius: 20px;				/* rounds top border*/
+	border-top-right-radius: 20px;
+}
+
+
+/***************************************************************************/
+/*************************** Contact Page Styles ***************************/
+
+.button {
+	    background-color: #4aaaa5;
+	    border: none;
+	    color: white;
+	    padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 16px;
+	    margin: 0px 0px 30px;
+	    cursor: pointer;
+}
+	
+.contact {
+
+		width: 100%;
+		border-color: #dddddd;
+		border-style: solid;
+		margin: 10px 0px 20px;
+		height: 35px;
+		padding-left: 10px;
+		color: #4aaaa5;
+}
+
+.message { height: 200px; }
+
+.button:hover {
+	
+	color: #4aaaa5;
+	background: #ffffff;
+	border: 1px solid #4aaaa5 ;
+	margin-bottom: 28px;
+}
+
+
+/*********************************************************************/
+/***************************** Portfolio Page Style ******************/
+
+.portfolio-figure {
+
+	width: 280px;
+	height: 200px;
+	box-sizing: border-box;
+	margin-bottom: 58px;
+	position: relative;		/* need so .image-label can be position: absolute */
+	
+}
+
+.image-label {
+	
+	color: white;
+	background: #4aaaa5;
+	font-size: 24px;
+	text-align: center;
+	padding: 18px 0px;
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	z-index: 1;	
+	border-bottom-left-radius: 6px;			/* rounds bottom border*/
+	border-bottom-right-radius: 6px;		/* rounds bottom border*/
+}
+
+#figure1, #figure3, #figure5 { float:left; }
+#figure2, #figure4 { float:right; }
+
+
+/****************************************************************************************/
+/***************************** Responsive max-width: 980px ******************************/
+
+
+@media only screen and (max-width: 980px){
+
+	
+	/*********************  Index Page Style  ********************/
+	.wrapper {
+		
+		min-height: 100%;
+		width:730px;
+		margin: 40px 0px -105px 125px;	
+	}
+
+	#my-name {
+	
+		color: #ffffff;
+		background: #4aaaa5;
+		margin-left: 125px;
+		height:62px;
+		width: 350px;
+		margin-top:0px;
+		padding-top: 28px;
+}	
+	#main {
+		
+		text-align: left;
+		width: 420px;
+		background: #ffffff;
+		border: 1px solid #dddddd; 
+		padding: 0 30px;
+		box-sizing: border-box;	
+		margin-bottom: 40px;
+	}
+
+
+	#profile-pic {
+		
+		height: 100%;
+		width: 100%;
+		margin-bottom: 25px;
+	}
+
+	.sidebar {
+	
+	width: 100%
+	height: 200px;
+	box-sizing: border-box;
+	background: #ffffff;
+	border: 1px solid #dddddd; 
+	padding: 30px 30px 40px 30px;
+	
+	}
+
+	nav {
+								
+		position: absolute;
+		right: 90px;
+	}
+
+
+}
+
+/****************************************************************************************/
+/***************************** Responsive max-width: 768px ******************************/
+
+@media only screen and (max-width: 768px){
+
+
+	.wrapper {
+		
+		min-height: 100%;
+		width: 728;
+		margin: 40px auto -105px;	
+	}
+	#main {
+		
+		font-size: 20px;
+		font-weight: 600;
+		text-align: left;
+		width: 100%;
+		background: #ffffff;
+		border: 1px solid #dddddd; 
+		padding: 0 30px;
+		margin-bottom: 40px;
+	}
+
+
+	#profile-pic {
+		float:left;
+		width: 50%;
+		margin-right: 25px;
+		margin-bottom: 25px;
+	}
+
+
+	.sidebar {
+
+		text-align: left;
+		width:100%;
+		margin-bottom: 40px;
+	}
+
+	
+	#my-name {
+	
+		color: #ffffff;
+		background: #4aaaa5;
+		margin-left: 20px;
+		height:62px;
+		width: 350px;
+		margin-top:0px;
+		padding-top: 28px;
+	}
+
+	nav {
+									
+		position: absolute;
+		right: 15px;
+	}
+
+	
+}
+
+/****************************************************************************************/
+/***************************** Responsive max-width: 640px ******************************/
+
+@media only screen and (max-width: 640px){
+	.wrapper {
+		
+		min-height: 100%;
+		width: 600px;
+		margin: 40px auto -105px;	
+	}
+	#main {
+		
+		font-size: 20px;
+		font-weight: 600;
+		text-align: left;
+		width: 100%;
+		background: #ffffff;
+		border: 1px solid #dddddd; 
+		padding: 0 30px;
+		margin-bottom: 40px;
+
+	}
+
+
+	#profile-pic {
+		width: 100%;
+		margin-right: 25px;
+		margin-bottom: 25px;
+
+	}
+
+
+	.sidebar {
+
+		text-align: left;
+		width:100%;
+		margin-bottom: 40px;
+	
+	}
+
+	header {
+		text-align: center;
+		height: 155px;
+		width: 100%;
+		border-bottom: 2px solid #cccccc;	
+		border-bottom-left-radius: 20px;			/* rounds bottom border*/
+		border-bottom-right-radius: 20px;			/* rounds bottom border*/
+	
+	}
+	
+	#my-name {
+	
+		color: #ffffff;
+		background: #4aaaa5;
+		
+		
+		height:62px;
+		width: 100%;
+		margin-left: 0px;
+		margin-top:0px;
+		padding-top: 28px;
+	}
+
+	nav {
+						
+		position: absolute;
+		top: 110px;
+		left: 0px;
+		
+	}
+
+	a.nav-menu { padding: 0px 65px;	
+}
+
+	
+	
+}
+
+
+
+
+
